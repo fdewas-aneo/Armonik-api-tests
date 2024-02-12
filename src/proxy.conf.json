@@ -1,0 +1,10 @@
+{
+  "/armonik.api.grpc.v1": {
+    "target": "http://172.24.180.187:5000",
+    "secure": false
+  },
+  "/static": {
+    "target": "http://172.24.180.187:5000",
+    "secure": false
+  }
+}

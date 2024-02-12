@@ -1,0 +1,16 @@
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 98vw;
+}
+
+article {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+}
