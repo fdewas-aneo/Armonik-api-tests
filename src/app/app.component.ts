@@ -22,7 +22,8 @@ import { Subject, catchError, interval, map, merge, startWith, switchMap } from 
 export class AppComponent implements OnInit {
   data: ApplicationRaw[] = [];
   oldData: ApplicationRaw[] = [];
-  nErrors = 0
+  nErrors = 0;
+  nCalls = 0;
   detected: boolean = false;
   
   interval$ = interval(1000);
@@ -46,6 +47,7 @@ export class AppComponent implements OnInit {
         return [];
       })
     ).subscribe(data => {
+      this.nCalls += 1;
       this.oldData = []
       
       this.data.forEach(l => {

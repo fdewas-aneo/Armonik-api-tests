@@ -1,4 +1,6 @@
 <button (click)="refresh()">Fetch Data</button>
+<p>Number of calls: {{nCalls}}</p>
+<p>Percentage of errors: {{(nErrors / (nCalls))*100 || 0}} %</p>
 <section>
   <article>
     <div *ngFor="let line of data">
