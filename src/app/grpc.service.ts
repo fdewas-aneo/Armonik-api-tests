@@ -16,6 +16,11 @@ export class GrpcService {
           applicationField: {
             field: ApplicationRawEnumField.APPLICATION_RAW_ENUM_FIELD_NAME
           }
+        },
+        {
+          applicationField: {
+            field: ApplicationRawEnumField.APPLICATION_RAW_ENUM_FIELD_VERSION
+          }
         }]
       }
     })
