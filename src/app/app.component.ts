@@ -4,6 +4,7 @@ import { GrpcService } from "./grpc.service";
 import { AsyncPipe, NgFor, NgIf } from "@angular/common";
 import { ApplicationRaw } from "@aneoconsultingfr/armonik.api.angular";
 import { Subject, catchError, interval, map, merge, startWith, switchMap } from "rxjs";
+import { SessionsComponent } from "./sessions/sessions.component";
 
 @Component({
   standalone: true,
@@ -16,7 +17,8 @@ import { Subject, catchError, interval, map, merge, startWith, switchMap } from 
   imports: [
     AsyncPipe,
     NgFor,
-    NgIf
+    NgIf,
+    SessionsComponent,
   ]
 })
 export class AppComponent implements OnInit {

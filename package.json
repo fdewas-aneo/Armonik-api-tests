@@ -10,6 +10,9 @@
   },
   "private": true,
   "dependencies": {
+    "@ag-grid-community/angular": "^31.2.0",
+    "@ag-grid-community/client-side-row-model": "^31.2.0",
+    "@ag-grid-community/styles": "latest",
     "@aneoconsultingfr/armonik.api": "^3.15.1",
     "@aneoconsultingfr/armonik.api.angular": "^3.15.1",
     "@angular/animations": "^16.2.0",
@@ -23,6 +26,7 @@
     "@ngx-grpc/core": "^3.1.2",
     "@ngx-grpc/grpc-web-client": "^3.1.2",
     "@types/google-protobuf": "^3.15.12",
+    "ag-grid-community": "^31.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
