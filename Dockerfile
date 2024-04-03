@@ -1,21 +1,18 @@
-FROM oven/bun:1.0.26 as build
+FROM oven/bun:canary-slim as build
 
-WORKDIR /app
+COPY ./package.json ./
+COPY ./bun.lockb ./
 
-COPY package.json ./
-COPY bun.lockb ./
+RUN bun i --frozen-lockfile
 
-RUN bun install
-
-COPY src ./
+COPY src ./src
+COPY tsconfig.json tsconfig.app.json ./
 COPY angular.json ./
-COPY tsconfig.json ./
-COPY tsconfig.app.json ./
 
 RUN bun run build
 
 FROM nginx:stable-alpine-slim as production
 
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY --from=build /dist /usr/share/nginx/html
 
 EXPOSE 80
