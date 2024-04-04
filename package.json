@@ -13,6 +13,7 @@
     "@ag-grid-community/angular": "^31.2.0",
     "@ag-grid-community/client-side-row-model": "^31.2.0",
     "@ag-grid-community/styles": "latest",
+    "@ag-grid-community/core": "latest",
     "@aneoconsultingfr/armonik.api": "^3.15.1",
     "@aneoconsultingfr/armonik.api.angular": "^3.15.1",
     "@angular/animations": "^16.2.0",
