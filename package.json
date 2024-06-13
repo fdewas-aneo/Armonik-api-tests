@@ -1,6 +1,7 @@
 {
   "name": "typewithbun",
   "version": "0.0.0",
+  "packageManager": "pnpm@9.1.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
